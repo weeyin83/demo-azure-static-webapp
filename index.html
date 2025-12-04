@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azure Static Web Apps Demo</title>
+  <meta name="description" content="A simple, creative demo site for Azure Static Web Apps" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="orbit">
+      <div class="planet"></div>
+      <div class="ring"></div>
+    </div>
+    <h1>
+      <span class="accent">Hello, Azure!</span>
+      <small>Static Web Apps Demo</small>
+    </h1>
+    <p class="tagline">Vanilla HTML • CSS • JS — fast, simple, and ready to deploy.</p>
+    <a class="cta" href="#try" aria-label="Jump to the interactive demo">Try the demo ↓</a>
+  </header>
+
+  <main class="content" id="try">
+    <section class="card">
+      <h2>Live Interaction</h2>
+      <p>Type your name and pick a color. The card updates instantly — no frameworks needed.</p>
+      <form id="demo-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Alex" autocomplete="name" />
+
+        <label for="color">Accent color</label>
+        <input id="color" name="color" type="color" value="#4F46E5" />
+
+        <button type="submit">Update</button>
+      </form>
+      <div class="preview" aria-live="polite">
+        <div class="badge">Welcome</div>
+        <div class="greeting">Hi, <span id="preview-name">friend</span> 👋</div>
+        <div class="note">This is a tiny interactive demo powered by JavaScript.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Ready for Azure</h2>
+      <ul class="features">
+        <li>Single-page static site</li>
+        <li>Fast CI/CD with Azure Static Web Apps</li>
+        <li>Zero dependencies — pure HTML/CSS/JS</li>
+        <li>Ship in minutes from GitHub</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for Azure Static Web Apps · Demo site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
